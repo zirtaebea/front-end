@@ -1,0 +1,207 @@
+<!-- Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final -->
+<!--Atalho para formatação incial é ! + enter no vscode -->
+<!DOCTYPE html>
+<!-- define que esse é um documento HTML na versão 5 -->
+<!--atributo lang que serve para a pagina ser indexada de forma mais eficaz pelos mecanismos de pesquisa permitindo que apareça corretamente em resultados especificos de idioma -->
+<html lang="pt-BR">
+
+<!--está começando o doc html-->
+<!--a cabeça/cabeçalho. NÃO FICA VISÍVEL -->
+<head>
+    <meta charset="UTF-8" />
+    <!--codificação de carecteres; utf-8 interpreta caracteres de qualquer idioma-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fornece ao navegador instruções sobre como controlar e dimensionar a página; define a largura da pagina para se adequar a qualquer dispositivo; responsividade-->
+    <title>Loonaverse</title>
+    <!--título da página web-->
+</head>
+
+<!--CORPO DO SITE; parte visível -->
+<body>
+    <header><!--ajuda no rankeamento do site em plataformas de busca-->
+        <nav>
+            <ul>
+                <li>LOONA</li>
+                <li>1/3</li>
+                <li>ODD EYE CIRCLE</li>
+                <li>YYXY</li>
+            </ul>
+        </nav>
+        <h1>Welcome to the Loonaverse</h1>
+    </header>
+
+    <!--APRESENTAÇÃO INICIAL-->
+    <section>
+        <!--SUBTÍTULO-->
+        <h2>Hello... finally introducing LOONA</h2>
+        <!--DESCRIÇÃO-->
+        <p>
+            LOOΠΔ was born in its own universe with three uniquely structured teams. In other words, it was not designed as a group diving up into three units, but three teams were built to create one universe. LOOΠΔ 1/3 is a combination of girls present on planet earth. These girls portray the most realistic and practical sceneries that can easily be found on the streets or in school. HeeJin, HyunJin, HaSeul and ViVi start their stories in France, Japan, Iceland, and Hong Kong to become unified as one. LOOΠΔ / ODD EYE CIRCLE places itself in between the earth and the cosmos. The beginning of ODD EYE CIRCLE was by looking at three moons (ODD). Mutative, or varietal, girls gather to form the ODD EYE CIRCLE, and show themselves by taking control in love relationships instead of waiting passively. LOOΠΔ / yyxy was also known as ‘Edenism’ as it was placed beyond the earth of 1/3 and the middle earth of ODD EYE CIRCLE, in the place where we call ‘utopia’. But, the girls of Eden decide to deny the rules of Eden to venture off on a forbidden quest to find their identities. The emotions of each girls, faith, hope, love, and anger gather to form a being named yyxy.
+        </p>
+        <p>
+        <br /><br />
+            Are you girls ready? Ok... Let's Go!
+        <br /><br />
+        <a href="https://www.w3.org">Site oficial da W3C</a>
+        <hr>
+        </p>
+        <!--IMAGENS-->
+        <figure>
+            <img src="img/LOONA_1-3_Love_and_Evil_group_photo_2.jpeg" alt="LOONA 1/3">
+            <figcaption>Loona 1/3</figcaption>
+        </figure>
+        <figure>
+            <img src="img/yeojin.jpg" alt="Yeojin">
+            <figcaption>Yeojin</figcaption>
+        </figure>
+        <figure>
+            <img src="img/oec.jpeg" alt="OEC">
+            <figcaption>LOONA ODD EYE CIRCLE</figcaption>
+        </figure>
+        <figure>
+            <img src="img/yyxy.jpg" alt="YYXY">
+            <figcaption>LOONA YYXY</figcaption>
+        </figure>
+    </section>
+
+    <!--VIDEO-->
+    <section>
+        <video controls width="500px">
+            <source src="video/[MV] 이달의 소녀 (LOONA) _Hi High_.mp4" type="video/mp4">
+            Seu navegador não suporta o formato do vídeo. <a href="https://www.youtube.com/watch?v=846cjX0ZTrk">Clique aqui para assistir.</a>
+        </video>
+    </section>
+
+    <!--FORMULÁRIO-->
+    <section>
+        <h2>My favOriTe register</h2>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>persOnal daTa</legend>
+                <!--NOME-->
+                <label>Name</label><br>
+                <input type="text" required name="name"><br><br><br>
+
+                <!--EMAIL-->
+                <label>E-mail</label><br>
+                <input type="email" required name="email"><br><br><br>
+
+                <!--BIRTH DATE-->
+                <label>Birth date</label><br>
+                <input type="date" name="birthDate"><br><br><br>
+            </fieldset><br>
+
+
+            <fieldset>
+                <!--UNIT FAVORITA-->
+                <legend>favOriTe uniT</legend>
+                <label>
+                    <br><input type="checkbox" name="unit1" value="loona13">LOONA 1/3 
+                </label>
+                <label>
+                    <br><input type="checkbox" name="unit2" value="oec"> ODD EYE CIRCLE
+                </label>
+                <label>
+                    <br><input type="checkbox" name="unit3" value="yyxy"> LOONA YYXY
+                </label>
+            </fieldset><br>
+
+
+            <fieldset>
+                <!--BIAS-->
+                <legend>yOur bias</legend>
+                <select name="bias">
+                    <option value="1">HeeJin</option>
+                    <option value="2">HyunJin</option>
+                    <option value="3">HaSeul</option>
+                    <option value="4">Yeojin</option>
+                    <option value="5">ViVi</option>
+                    <option value="6">Kim Lip</option>
+                    <option value="7">JinSoul</option>
+                    <option value="8">Choerry</option>
+                    <option value="9">Yves</option>
+                    <option value="10">Chuu</option>
+                    <option value="11">GoWon</option>
+                    <option value="12">Olivia Hye</option>
+                    <option value="donthave" selected>I don't have a bias</option>
+                </select>
+            </fieldset><br>
+
+
+            <fieldset>
+                <legend>yOu and LOONA</legend>
+                <!--HOW MANY YEARS DO YOU KNOW LOONA?-->
+                <label>How many years do you know LOONA?</label><br>
+                <input type="number" name="stanLoonaYears"><br><br><br>
+
+                <!--WHY DO YOU LIKE LOONA-->
+                <label>Why do you like LOONA?</label><br><br>
+                <textarea rows="5" name="comment"></textarea><br><br>
+
+                <!--BOYCOTT INFO-->
+                <label>Do you still boycott LOONA's albuns on streaming services?</label><br>
+                <label>
+                    <input type="radio" name="boycott" value="yes"> Yes, i still boycott. 
+                </label>
+                <label>
+                    <br><input type="radio" name="boycott" value="no"> No.
+                </label>
+            </fieldset><br>
+
+
+        <!--botão de submit-->
+            <button>submiT</button>
+        </form>
+    </section>
+
+    <!--TABELA DE UNITS -->
+    <section> 
+        <h2>Units</h2>
+        <p>Entenda melhor a distribuição de integrantes do LOONA em subunits</p>
+        <table border>
+            <caption>Componentes de cada UNIT do Loona</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Units
+                    </th>
+                    <th>
+                        Members
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        LOONA 1/3
+                    </td>
+                    <td>
+                        Heejin, Hyunjin, HaSeul, ViVi
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        LOONA ODD EYE CIRCLE
+                    </td>
+                    <td>
+                        Kim Lip, JinSoul, Choerry
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        LOONA YYXY
+                    </td>
+                    <td>
+                        Yves, Chuu, GoWon, Olivia Hye
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <p>Desenvolvido por Bea</p>
+    </footer>
+</body>
+</html>
