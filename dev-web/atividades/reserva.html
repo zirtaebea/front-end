@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD-->
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Reserva</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<!--BODY-->
+<body>
+
+    <h1>Formulário de reserva</h1><br>
+
+    <!--FORMULÁRIOS-->
+    <section>
+        <h2>Reserve agora!</h2>
+        <form action="" method="get">
+            <!--DADOS PESSOAIS-->
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <!--NOME-->
+                <br><label>Nome</label>
+                <br><input type="text" name="nome"><br>
+
+                <!--EMAIL-->
+                <br><label>Email</label>
+                <br><input type="email" required name="email"><br><br>
+
+            </fieldset>
+            <br>
+
+            <!--SERVIÇOS DESEJADOS-->
+            <fieldset>
+                <legend>Serviços desejados</legend>
+                <label>
+                    <input type="checkbox" name="passagens">Compra de passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="reservaHosp">Reserva de hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="aluguelVeiculo">Aluguel de Veículos
+                </label>
+            </fieldset>
+            <br>
+
+            <!--PAGAMENTO-->
+            <fieldset>
+                <legend>Pagamento</legend>
+                <br>
+                <!--FORMA DE PAGAMENTO-->
+                <label>Forma de pagamento</label>
+                    <br><label>
+                    <br><input type="radio" name="pagamento" value="pix">Pix
+                    </label>
+                    <label>
+                        <br><input type="radio" name="pagamento" value="credito">Cartão de crédito
+                    </label>
+                    <label>
+                        <br><input type="radio" name="pagamento" value="boleto">Boleto bancário
+                    </label>
+                <br><br><br>
+                <!--PRAZO PAGAMENTO-->
+                <label>Prazo de pagamento</label>
+                <br><label>
+                    <br><select name="prazoPagamento">
+                            <option value="aVista">À Vista</option>
+                            <option value="5xSemJuros">5x Sem Juros</option>
+                            <option value="10xComJuros">10x Com Juros</option>
+                        </select>
+                    </label>
+            </fieldset><br>
+            
+            <!--OBSERVAÇÕES-->
+            <fieldset>
+                <legend>Informações adicionais</legend>
+                <textarea name="infoAdd" rows="10"></textarea>
+            </fieldset><br>
+            
+            <!--BOTÃO SUBMIT-->
+            <br><input type="submit">
+        </form>
+    </section>
+    
+</body>
+</html>
