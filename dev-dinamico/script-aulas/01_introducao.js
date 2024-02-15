@@ -15,7 +15,7 @@ var nomePessoa = "Beatriz";
 var NOMEPESSOA = "Luana"
 
 console.log(teste);
-console.log(nomePessoa)
+console.log(nomePessoa);
 console.log(NOMEPESSOA);
 
 // podemos criar múltiplas variáveis sem ficar repetindo o var/let
